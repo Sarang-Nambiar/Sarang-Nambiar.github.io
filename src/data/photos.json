@@ -1,0 +1,74 @@
+[
+  {
+    "id": "DSC00074",
+    "title": "DSC00074",
+    "width": 6000,
+    "height": 3376,
+    "small": "photos/DSC00074-1280.webp",
+    "large": "photos/DSC00074-2560.webp"
+  },
+  {
+    "id": "DSC00105",
+    "title": "DSC00105",
+    "width": 6000,
+    "height": 3376,
+    "small": "photos/DSC00105-1280.webp",
+    "large": "photos/DSC00105-2560.webp"
+  },
+  {
+    "id": "DSC00274",
+    "title": "DSC00274",
+    "width": 6000,
+    "height": 3376,
+    "small": "photos/DSC00274-1280.webp",
+    "large": "photos/DSC00274-2560.webp"
+  },
+  {
+    "id": "DSC00301",
+    "title": "DSC00301",
+    "width": 6000,
+    "height": 3376,
+    "small": "photos/DSC00301-1280.webp",
+    "large": "photos/DSC00301-2560.webp"
+  },
+  {
+    "id": "DSC00362-2",
+    "title": "DSC00362-2",
+    "width": 6000,
+    "height": 3375,
+    "small": "photos/DSC00362-2-1280.webp",
+    "large": "photos/DSC00362-2-2560.webp"
+  },
+  {
+    "id": "DSC00424-2",
+    "title": "DSC00424-2",
+    "width": 2048,
+    "height": 1152,
+    "small": "photos/DSC00424-2-1280.webp",
+    "large": "photos/DSC00424-2-2560.webp"
+  },
+  {
+    "id": "fireworks",
+    "title": "fireworks",
+    "width": 6000,
+    "height": 3376,
+    "small": "photos/fireworks-1280.webp",
+    "large": "photos/fireworks-2560.webp"
+  },
+  {
+    "id": "gbtb",
+    "title": "gbtb",
+    "width": 6000,
+    "height": 3376,
+    "small": "photos/gbtb-1280.webp",
+    "large": "photos/gbtb-2560.webp"
+  },
+  {
+    "id": "patterns",
+    "title": "patterns",
+    "width": 6000,
+    "height": 3376,
+    "small": "photos/patterns-1280.webp",
+    "large": "photos/patterns-2560.webp"
+  }
+]

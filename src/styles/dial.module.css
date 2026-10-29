@@ -1,0 +1,30 @@
+.dial { position: relative; width: var(--dial); height: var(--dial); flex: none; }
+.ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--btn);
+  border: 1px solid var(--btn-border);
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.35);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+.ring:active { cursor: grabbing; }
+.ticks {
+  position: absolute;
+  inset: 5%;
+  border-radius: 50%;
+  background: repeating-conic-gradient(var(--tick) 0 2deg, transparent 2deg 15deg);
+  -webkit-mask: radial-gradient(circle, transparent 64%, #000 65%);
+  mask: radial-gradient(circle, transparent 64%, #000 65%);
+  pointer-events: none;
+}
+.cap {
+  position: absolute;
+  inset: 28%;
+  border-radius: 50%;
+  background: var(--body);
+  border: 1px solid var(--btn-border);
+  pointer-events: none;
+}

@@ -1,0 +1,392 @@
+{
+	"profile": {
+		"name": "Sarang Nambiar",
+		"tagline": "Software Developer",
+		"bio": "Hi there! I am a Computer Science graduate from SUTD who really loves technology. I am always excited to check out the latest tech trends and try them out for myself. Coding is more than just a skill for me, it is something I genuinely enjoy. Aside from that, I love listening to music, clicking photos and keeping active by going to the gym.\n\nI learn new things pretty quickly. So, if there's a new technology or skill needed for a job, I am ready to dive in and learn. My main goal is to use my skills to help both myself and any company I work with grow and succeed.\n\nAll in all, I am a tech enthusiast who is always ready to learn and help. Whether it is with coding, new tech, or any other challenge, I am here to give it my best.",
+		"links": {
+			"flickr": "https://www.flickr.com/photos/146664395@N02/",
+			"linkedin": "https://www.linkedin.com/in/sarangnambiar/",
+			"github": "https://github.com/Sarang-Nambiar"
+		}
+	},
+	"items": [
+		{
+			"id": "sutd-security-researcher",
+			"type": "experience",
+			"title": "Security Researcher",
+			"org": "Singapore University of Technology and Design",
+			"start": "2025-07",
+			"end": "present",
+			"highlights": [
+				"Developed a dynamic analysis framework that detects malicious Pre-Trained Models (PTMs) by learning their benign execution patterns, significantly improving the security and trustworthiness of Model Hubs like Hugging Face. (DynaHug)",
+				"Built an automated PTM run-time analysis system using Docker and system-call monitoring tools (strace) to safely isolate and analyze suspicious PTMs without risking the host environment.",
+				"Served as the main author on the research above (arxiv link). Under review at MSR 2027.",
+				"Identifying critical vulnerabilities in code reasoning LLMs against backdoor-based attacks while supervising a team of interns, helping secure AI-assisted coding tools (Akrasia)",
+				"Developed novel attacks targeting PTMs to evaluate security scanners (open and closed-source) on Model Hubs like Hugging Face, implementing defensive improvements to strengthen these open-source tools. (ShadowPickle)",
+				"Leading a team of interns to design a validation framework to ensure translated codebases function equivalently to their blackboxed source codebases."
+			],
+			"tags": [
+				"Python",
+				"Dynamic Analysis",
+				"Anomaly Detection",
+				"GCP",
+				"AST",
+				"LRMs",
+				"Prompt Injection"
+			],
+			"links": [
+				{
+					"label": "DynaHug Paper (arXiv)",
+					"url": "https://arxiv.org/abs/2604.19438"
+				},
+				{
+					"label": "ShadowPickle Paper (arXiv)",
+					"url": "https://arxiv.org/html/2607.17503v1"
+				},
+				{
+					"label": "Akrasia Paper (arXiv)",
+					"url": "https://arxiv.org/abs/2609.01023"
+				}
+			]
+		},
+		{
+			"id": "sutd-research-assistant",
+			"type": "experience",
+			"title": "Undergraduate Research Assistant",
+			"org": "Singapore University of Technology and Design",
+			"start": "2025-01",
+			"end": "2025-06",
+			"highlights": [
+				"Built a poisoned dataset from Microsoft's CodeXGLUE using Python AST to study deletion-based backdoor attacks in open and closed source LLMs.",
+				"Contributed to mutation testing based defense for localizing the backdoor trigger phrase helping improve LLM guardrails."
+			],
+			"tags": [
+				"Python",
+				"Tree-sitter",
+				"Fine Tuning LLMs",
+				"Metamorphic Testing"
+			]
+		},
+		{
+			"id": "handshakes-swe-intern",
+			"type": "experience",
+			"title": "Software Engineer Intern",
+			"org": "Handshakes - By DC Frontiers",
+			"start": "2024-07",
+			"end": "2024-09",
+			"highlights": [
+				"Centralized password reset operations in Keycloak by routing data to SQL with synchronized password hashing algorithm, ensuring consistent security policies for 50+ employee accounts.",
+				"Strengthened the authorization and authentication flow by implementing JWT sessions with NextAuth.",
+				"Automated and deployed data collection scripts for 30+ websites with 95% accuracy using Puppeteer on AWS."
+			],
+			"tags": [
+				"Java",
+				"Keycloak",
+				"Next.js",
+				"TypeScript",
+				"NextAuth",
+				"AWS",
+				"Puppeteer",
+				"Apache Freemarker",
+				"MSSQL",
+				"IAM"
+			]
+		},
+		{
+			"id": "vmarsbio-swe-intern",
+			"type": "experience",
+			"title": "Software Engineer Intern",
+			"org": "VMARSBio",
+			"start": "2024-06",
+			"highlights": [
+				"Made Biopharma Equipment States easier to understand by turning complex diagrams into clear visuals with Next.js."
+			],
+			"tags": [
+				"Next.js",
+				"TypeScript",
+				"MySQL",
+				"VBA",
+				"PowerShell",
+				"Electron.js"
+			]
+		},
+		{
+			"id": "aztech-rnd-intern",
+			"type": "experience",
+			"title": "R&D Software Developer Intern",
+			"org": "Aztech Technologies Pte Ltd",
+			"start": "2023-08",
+			"end": "2023-12",
+			"highlights": [
+				"Optimized a smart lighting platform by streamlining the user interface with React and Spring Boot. Ensured stability through automated testing with Selenium before deploying to production with Docker.",
+				"Prototyped a full-stack data platform to analyze bodycam footage from scratch, designing the AWS cloud backend and React frontend."
+			],
+			"tags": [
+				"React.js",
+				"React Redux",
+				"Java",
+				"Spring Boot",
+				"Docker",
+				"Selenium",
+				"PostgreSQL",
+				"AWS"
+			]
+		},
+		{
+			"id": "ross",
+			"type": "project",
+			"title": "ROSS (Tencent Cloud AI CAN DO IT Hackathon)",
+			"category": "AI & Agents",
+			"start": "2026-10",
+			"highlights": [
+				"Built ROSS, a permission-aware AI assistant and agent platform that answers cited questions across Google Drive, Confluence, Jira and Slack with tamper-evident audit logging."
+			],
+			"tags": [
+				"Python",
+				"FastAPI",
+				"React.js",
+				"TypeScript",
+				"PostgreSQL",
+				"SQLAlchemy",
+				"LiteLLM",
+				"MCP",
+				"OAuth 2.0",
+				"Workflow/DAG Engine",
+				"OpenTelemetry",
+				"Grafana",
+				"Prometheus",
+				"Docker"
+			],
+			"images": ["projects/ross-cover.webp"],
+			"github": "https://github.com/Sarang-Nambiar/ROSS"
+		},
+		{
+			"id": "dis-skribbl",
+			"type": "project",
+			"title": "dis-skribbl",
+			"category": "Games & Graphics",
+			"start": "2026-10",
+			"end": "present",
+			"highlights": [
+				"Building an online multiplayer Pictionary game with a React.js frontend and a Go backend.",
+				"Using Go WebSockets to power private game rooms, live chat, and a shared drawing board that updates instantly for every player."
+			],
+			"tags": [
+				"Go",
+				"React.js",
+				"WebSockets",
+				"Sprite Sheet Rendering",
+				"TypeScript"
+			],
+			"github": "https://github.com/Sarang-Nambiar/dis-skribbl"
+		},
+		{
+			"id": "phishing-detector",
+			"type": "project",
+			"title": "Multi-Agent Phishing Detector",
+			"category": "Security",
+			"start": "2026-07",
+			"highlights": [
+				"Building an AI-powered Chrome extension that detects phishing websites by analyzing URL patterns and page content through LLM agents."
+			],
+			"tags": [
+				"Anomaly Detection",
+				"Shannon's Entropy",
+				"FastAPI",
+				"Python",
+				"React.js"
+			],
+			"github": "https://github.com/Sarang-Nambiar/dis-phishing-detector"
+		},
+		{
+			"id": "travel-planner",
+			"type": "project",
+			"title": "Multi-Agent Travel Planner",
+			"category": "AI & Agents",
+			"start": "2026-01",
+			"highlights": [
+				"Developed a multi-agent AI travel planner that automates itinerary creation, coordinating specialized agents to find flights, accommodations, and visa requirements.",
+				"Built a Streamlit interface and FastAPI backend to enable user input and handle complex data processing efficiently."
+			],
+			"tags": [
+				"Python",
+				"LangGraph",
+				"Streamlit",
+				"Pydantic",
+				"Multi-Agent Systems",
+				"FastAPI"
+			],
+			"github": "https://github.com/Sarang-Nambiar/dis-travel-planner"
+		},
+		{
+			"id": "telegram-mcp",
+			"type": "project",
+			"title": "Telegram MCP",
+			"category": "AI & Agents",
+			"start": "2025-11",
+			"highlights": [
+				"Built a Telegram MCP server enabling MCP clients to read, send and delete messages, facilitating delivery of generated content like recipes or code snippets."
+			],
+			"tags": ["Python", "Telethon", "MCP", "Asynchronous Programming"],
+			"github": "https://github.com/Sarang-Nambiar/telegram-mcp"
+		},
+		{
+			"id": "audio-visualizer",
+			"type": "project",
+			"title": "Audio-Visualizer",
+			"category": "Games & Graphics",
+			"start": "2025-09",
+			"highlights": [
+				"Developed a real-time 3D audio visualizer using React and Three.js, where a dynamic sphere responds to live microphone input and uploaded audio through real-time frequency analysis."
+			],
+			"tags": [
+				"React",
+				"Three.js",
+				"React-Three-Fiber",
+				"TypeScript",
+				"Perlin Noise",
+				"WebGL",
+				"Signal Processing"
+			],
+			"github": "https://github.com/Sarang-Nambiar/audio-visualizer"
+		},
+		{
+			"id": "crypt",
+			"type": "project",
+			"title": "Crypt",
+			"category": "Games & Graphics",
+			"start": "2025-01",
+			"end": "2025-04",
+			"highlights": [
+				"Built a 2D turn-based dungeon crawler game in C using the SDL2 library for graphics rendering and keyboard input handling.",
+				"Implemented autosave system that periodically saves game progress and validates save file corruption."
+			],
+			"tags": [
+				"C",
+				"SDL2",
+				"Finite State Machines",
+				"Sprite Sheet Rendering",
+				"Autosave Systems",
+				"Data Validation"
+			],
+			"images": ["projects/crypt-level1.webp"],
+			"github": "https://github.com/Sarang-Nambiar/crypt"
+		},
+		{
+			"id": "simpledb",
+			"type": "project",
+			"title": "SimpleDB",
+			"category": "Systems & Databases",
+			"start": "2025-01",
+			"end": "2025-04",
+			"highlights": [
+				"Collaborated to design and implement the framework of a custom relational database management system (RDBMS) in Java.",
+				"Implemented memory-efficient buffer pools, concurrency control with 2PL locking, DFS deadlock detection, and indexing with B+ Trees."
+			],
+			"tags": [
+				"Java",
+				"BufferPool Management",
+				"Two-Phase Locking",
+				"Deadlock Detection",
+				"Transactions",
+				"ACID"
+			],
+			"images": ["projects/simpledb-tree.webp"],
+			"github": "https://github.com/Sarang-Nambiar/SimpleDB"
+		},
+		{
+			"id": "nautiquest",
+			"type": "project",
+			"title": "NautiQuest - A Low Cost Autonomous Underwater Vehicle",
+			"category": "Robotics & Vision",
+			"start": "2024-09",
+			"end": "2025-05",
+			"highlights": [
+				"Designed a low-cost autonomous underwater vehicle (AUV) under $4,000 for surveillance and monitoring, utilizing computer vision to detect and navigate towards objects of interest.",
+				"Developed a simulation environment to test hydrodynamics and integrated real-world hardware sensors via MAVLink, applying PID control and evaluated SLAM algorithms to ensure stable, autonomous navigation."
+			],
+			"tags": [
+				"ROS",
+				"Gazebo",
+				"MAVLink",
+				"Python",
+				"C++",
+				"SLAM",
+				"PID Control",
+				"ArduSub",
+				"Computer Vision",
+				"Autonomous Navigation"
+			]
+		},
+		{
+			"id": "p2p-chord",
+			"type": "project",
+			"title": "P2P File Transfer System using Chord Protocol",
+			"category": "Systems & Databases",
+			"start": "2024-09",
+			"end": "2024-12",
+			"highlights": [
+				"Developed a decentralized and scalable file sharing system using the Chord DHT protocol, allowing scalable P2P file transfers.",
+				"Designed the system to handle permanent, intermittent and byzantine node failures efficiently."
+			],
+			"tags": ["Go", "RPC", "Distributed Systems", "Fault Tolerance"],
+			"github": "https://github.com/Sarang-Nambiar/P2P-Chord-File-Transfer-System"
+		},
+		{
+			"id": "rag-code-analysis",
+			"type": "project",
+			"title": "RAG-Based GitHub Code Analysis Tool",
+			"category": "AI & Agents",
+			"start": "2024-09",
+			"end": "2024-12",
+			"highlights": [
+				"Developed a RAG-based system to query complex GitHub repositories, enabling developers to gain understanding of code logic.",
+				"Optimized retrieval quality through advanced prompting and re-rankers, validating output accuracy using RAGAS metrics."
+			],
+			"tags": [
+				"Langchain",
+				"Ollama",
+				"FAISS",
+				"BM25",
+				"Tree-sitter",
+				"AST",
+				"RAGAS"
+			],
+			"images": ["projects/rag-reranker.webp"],
+			"github": "https://github.com/Sarang-Nambiar/RAG-based-GitHub-Code-Analysis"
+		},
+		{
+			"id": "job-summarizer-ai",
+			"type": "project",
+			"title": "Job-Summarizer-AI",
+			"category": "AI & Agents",
+			"start": "2024-04",
+			"highlights": [
+				"Developed an AI-powered Chrome extension using React to extract key insights from job postings, streamlining the job search workflow."
+			],
+			"tags": ["React", "TypeScript", "FastAPI", "Langchain"],
+			"github": "https://github.com/Sarang-Nambiar/job-summarizer-ai"
+		},
+		{
+			"id": "occupeye",
+			"type": "project",
+			"title": "OccupEye",
+			"category": "Robotics & Vision",
+			"start": "2023-03",
+			"end": "2023-04",
+			"highlights": [
+				"Developed an Android application using Java and YOLOv5 computer vision to automatically monitor study room occupancy levels, helping users locate available spaces while utilizing Firebase for secure authentication and data storage.",
+				"Recognized as one of the Outstanding Project Exhibits via a public audience vote."
+			],
+			"tags": [
+				"Java",
+				"Android Studio",
+				"YOLOv5",
+				"Google Firebase",
+				"Authentication",
+				"Occupancy Detection"
+			],
+			"github": "https://github.com/Sarang-Nambiar/OccupEye"
+		}
+	]
+}

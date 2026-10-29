@@ -1,0 +1,94 @@
+.body {
+  /* The camera stays black in both themes. */
+  --body: #1a1a1a;
+  --body-edge: #2c2c2c;
+  --btn: #2a2a2a;
+  --btn-hover: #3a3a3a;
+  --btn-border: #444;
+  --btn-ink: #f2f2f2;
+  --tick: rgba(255, 255, 255, 0.35);
+  --btn-size: 52px;
+  --dial: 118px;
+  width: min(1100px, 100%);
+  /* Keep the whole camera within the viewport height on short screens. */
+  max-width: max(600px, calc((100vh - 220px) * 1.5 + 168px));
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  background: linear-gradient(145deg, var(--body-edge), var(--body));
+  border-radius: 22px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+.screenWrap { flex: 1; min-width: 0; display: flex; align-items: center; }
+.screen {
+  /* The LCD stays dark in both themes. */
+  --ink: #f2f2f2;
+  --muted: #a9a9a9;
+  --link: #f08c00;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  background: #000;
+  color: var(--ink);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 3px solid #050505;
+}
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  width: calc(var(--dial) + 4px);
+}
+.buttons { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.btn {
+  width: var(--btn-size);
+  height: var(--btn-size);
+  flex: none;
+  padding: 0;
+  border: 1px solid var(--btn-border);
+  border-radius: 50%;
+  background: var(--btn);
+  color: var(--btn-ink);
+  font-size: calc(var(--btn-size) * 0.27);
+  font-weight: 700;
+  letter-spacing: 0;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+.btn:hover { background: var(--btn-hover); }
+.btn:active { transform: scale(0.94); }
+.active, .active:hover { background: var(--accent); border-color: var(--accent); color: #111; }
+.fs { font-size: calc(var(--btn-size) * 0.4); }
+
+/* Fullscreen (or the fallback "expanded" state): the whole camera fills the display. */
+.body:fullscreen, .expanded {
+  --btn-size: 68px;
+  --dial: 150px;
+  width: 100vw;
+  max-width: none;
+  height: 100vh;
+  padding: 24px;
+  border-radius: 0;
+  box-shadow: none;
+}
+.expanded { position: fixed; inset: 0; z-index: 100; }
+.body:fullscreen .screen, .expanded .screen { height: 100%; aspect-ratio: auto; }
+.body:fullscreen .controls, .expanded .controls { justify-content: center; gap: 36px; }
+
+@media (max-width: 768px), (orientation: portrait) {
+  .body {
+    --btn-size: 40px;
+    --dial: 92px;
+    max-width: 100%;
+    flex-direction: column;
+    padding: 12px;
+  }
+  .controls { flex-direction: row; width: 100%; align-items: center; gap: 10px; }
+  .buttons { flex: 1; flex-direction: row; justify-content: space-between; gap: 4px; }
+  .body:fullscreen, .expanded { --btn-size: 44px; --dial: 96px; }
+  .body:fullscreen .controls, .expanded .controls { justify-content: space-between; gap: 10px; }
+  .body:fullscreen .screenWrap, .expanded .screenWrap { flex: 1; }
+}

@@ -1,0 +1,42 @@
+:root {
+  --accent: #f08c00;
+  --link: #f08c00;
+  --page-bg: #0b0b0b;
+  --ink: #f2f2f2;
+  --muted: #a9a9a9;
+  --body: #1a1a1a;
+  --body-edge: #2c2c2c;
+  --btn: #2a2a2a;
+  --btn-hover: #3a3a3a;
+  --btn-border: #444;
+  --btn-ink: #f2f2f2;
+  --tick: rgba(255, 255, 255, 0.35);
+}
+/* Light mode: pale page; the camera body keeps its own dark colors (camera.module.css). */
+:root[data-theme='light'] {
+  --link: #a85a00;
+  --page-bg: #ebe8e3;
+  --ink: #1b1b1b;
+  --muted: #5d5d5d;
+  --body: #b9bdc2;
+  --body-edge: #e2e4e7;
+  --btn: #d5d8dc;
+  --btn-hover: #c3c7cc;
+  --btn-border: #8b9096;
+  --btn-ink: #1b1b1b;
+  --tick: rgba(0, 0, 0, 0.4);
+}
+* { box-sizing: border-box; }
+html, body, #root { min-height: 100%; margin: 0; }
+body {
+  background: var(--page-bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  transition: background 0.2s, color 0.2s;
+}
+a { color: var(--link); }
+button { font: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

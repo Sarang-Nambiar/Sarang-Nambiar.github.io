@@ -1,0 +1,40 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 88px;
+  padding: 18px clamp(16px, 4vw, 40px);
+}
+.brand { display: flex; flex-direction: column; }
+.brand strong {
+  /* Script glyphs overhang the line box and the gradient only paints inside the
+     element's box, so give it room above and below to avoid clipping. */
+  line-height: 1.5;
+  padding: 0.12em 0.2em 0.25em;
+  /* Gold is fixed on purpose: it must not change between light and dark mode. */
+  font-family: 'Lavishly Yours', 'Brush Script MT', cursive;
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  font-weight: 400; /* the only weight this font ships; avoids faux bold */
+  letter-spacing: 0.01em;
+  background: linear-gradient(100deg, #f0b323, #d98a00 55%, #c46d00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #d98a00;
+}
+.flash {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--btn-border);
+  background: var(--btn);
+  color: var(--btn-ink);
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+.flash:hover { background: var(--btn-hover); }
+.flash:active { transform: scale(0.94); }
+.on { background: var(--accent); border-color: var(--accent); color: #111; }
+.on:hover { background: var(--accent); }
